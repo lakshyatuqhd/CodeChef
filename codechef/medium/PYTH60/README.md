@@ -4,40 +4,25 @@
 
 ## Problem
 
-### Mile to Kilometer Convertor
-
-Listen
-
-Write a program which creates a Convertor that converts miles into kilometers.(1 Mile = 1.60 KM)
-
-- Accept user input and store it in mile as integer
-- Compute and output distance in kilometers - km to the console
-### Sample 1:
-Input
-Output
-
-```
-106
-```
-
-```
-169.6
-```
+_Description not available._
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T10:45:33.571Z  
+**Submitted:** 2026-08-17T10:44:55.216Z  
 
 ```py
 # Solution as follows
 
-mile = int(input())
-km = 1.6 * mile
+a = int(input())
 
-print(km)
+square = a * a
+cube = a * a * a
+
+print("Square is:", square)
+print("Cube is:", cube)
 ```
 
 ---
