@@ -1,5 +1,10 @@
 # Solution as follows
 
-x = input()     # Remember that input() is necessarily a string
+a = int(input())
+b = int(input())
 
-print("Hello", x)
+sum = a + b
+diff = a - b
+
+print(sum)
+print(diff)
