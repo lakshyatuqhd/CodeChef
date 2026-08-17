@@ -19,7 +19,7 @@ print(s[2:9:3])
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T10:27:17.639Z  
+**Submitted:** 2026-08-17T10:27:24.117Z  
 
 ```cpp
 var = "String"
