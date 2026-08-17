@@ -1,9 +1,6 @@
 # Solution as follows
 
-a = int(input())
+mile = int(input())
+km = 1.6 * mile
 
-square = a * a
-cube = a * a * a
-
-print("Square is:", square)
-print("Cube is:", cube)
+print(km)
