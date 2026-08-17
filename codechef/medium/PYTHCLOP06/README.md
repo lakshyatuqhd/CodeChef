@@ -18,7 +18,7 @@ print((5 + 3) < (2 * 5))
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T09:54:36.233Z  
+**Submitted:** 2026-08-17T09:54:39.532Z  
 
 ```cpp
 # solution as follows
