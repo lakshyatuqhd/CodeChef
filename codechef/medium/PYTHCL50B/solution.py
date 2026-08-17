@@ -1,10 +1,4 @@
 # Solution as follows
 
-a = int(input())
-b = int(input())
-
-sum = a + b
-diff = a - b
-
-print(sum)
-print(diff)
+num = int(input())
+print(num*num)
