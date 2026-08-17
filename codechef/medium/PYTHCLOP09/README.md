@@ -13,7 +13,7 @@ Which of the following expressions evaluates to `False`?
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T10:00:23.884Z  
+**Submitted:** 2026-08-17T10:00:26.657Z  
 
 ```cpp
 # solution as follows
