@@ -24,7 +24,7 @@ print(d)
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T10:39:49.882Z  
+**Submitted:** 2026-08-17T10:39:52.661Z  
 
 ```cpp
 # Solution as follows
