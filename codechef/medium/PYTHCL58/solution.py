@@ -1,8 +1,9 @@
 # Solution as follows
 
-length = int(input())
-width = int(input())
+a = int(input())
 
-area = length * width
+square = a * a
+cube = a * a * a
 
-print("Area of the rectangle is:", area)
+print("Square is:", square)
+print("Cube is:", cube)
