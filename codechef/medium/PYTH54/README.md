@@ -4,21 +4,49 @@
 
 ## Problem
 
-_Description not available._
+### Calculator
+
+Listen
+
+Write a program which does the following
+
+- Create a calculator
+- Initialize the variables a and b based on two user inputs
+- Declare an integer variable sum - and store the value of addition of a and b
+- Declare an integer variable diff - and store the value of subtraction of a and b
+- Output sum and diff to the console on separate lines
+### Sample 1:
+Input
+Output
+
+```
+35
+23
+```
+
+```
+58
+12
+```
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T10:37:23.128Z  
+**Submitted:** 2026-08-17T10:37:39.634Z  
 
 ```py
 # Solution as follows
 
-x = input()     # Remember that input() is necessarily a string
+a = int(input())
+b = int(input())
 
-print("Hello", x)
+sum = a + b
+diff = a - b
+
+print(sum)
+print(diff)
 ```
 
 ---
