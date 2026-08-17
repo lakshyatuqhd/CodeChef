@@ -20,7 +20,7 @@ print(x)
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T09:47:24.628Z  
+**Submitted:** 2026-08-17T09:47:27.755Z  
 
 ```cpp
 # Solution as follows
