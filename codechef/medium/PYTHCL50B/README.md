@@ -4,29 +4,57 @@
 
 ## Problem
 
-### Calculator
+### Converting input datatype
 
 Listen
 
+The  **`input()`**  function assumes that the input is a string. This means whatever the user types, whether it is letters, numbers, or special characters,  **`input()`**  directly reads it as a string.
+
+So, if you need to work with numbers, you have to convert the input to an integer or a float. We learned how to convert types in one of our previous lessons. We use the same method to convert the input to an integer:
+
+```
+num1 = int(input())
+num2 = int(input())
+print(num1 + num2)
+
+```
+
+If the user enters $2$ as the value of  **`num1`**  and $3$ as the value of  **`num2`**, the output will be $5$. However, if we don't convert it to an `integer`, the output will be $23$ because  **`input()`**  takes the input as a string, and it will perform string concatenation instead of integer addition.
+
+Just like how we used the int() function to convert input to an integer value, we can read values of any datatype. For example, if you want to read float values, you can use the float() function.
+
+### Task
+
 Write a program which does the following
 
-- Create a calculator
-- Initialize the variables a and b based on two user inputs
-- Declare an integer variable sum - and store the value of addition of a and b
-- Declare an integer variable diff - and store the value of subtraction of a and b
-- Output sum and diff to the console on separate lines
+- Declare an integer variable num
+- Try taking a number from the console and assign it to num
+- Output the square of num to the console
+
+These are few sample testcases for your reference:
+
 ### Sample 1:
 Input
 Output
 
 ```
-35
-23
+3
 ```
 
 ```
-58
-12
+9
+```
+
+### Sample 2:
+Input
+Output
+
+```
+4
+```
+
+```
+16
 ```
 
 ## Solution
@@ -34,19 +62,13 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T10:38:13.137Z  
+**Submitted:** 2026-08-17T10:38:39.836Z  
 
 ```py
 # Solution as follows
 
-a = int(input())
-b = int(input())
-
-sum = a + b
-diff = a - b
-
-print(sum)
-print(diff)
+num = int(input())
+print(num*num)
 ```
 
 ---
