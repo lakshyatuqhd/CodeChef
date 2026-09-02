@@ -1,2 +1,3 @@
-c, x, y = map(int, input().split())
-print((c - x)* y) #previous opertaions were incorrect
+# your code goes here
+N, M = map(int, input().split())
+print(N*2 + M*4)  # wrong previous operations
