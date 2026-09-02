@@ -1,13 +1,3 @@
-number = int(input())
-
-if number > 0:
-    print("The number is positive")
-    if number % 2 == 0:
-        print("The number is even")
-    else:
-        print("The number is odd")
-elif number < 0:
-    print("The number is negative")
-else:
-    print("The number is zero")
-
+name = input()
+age = int(input())
+print("Hello " + name + ", you are " + str(age) + " years old")
