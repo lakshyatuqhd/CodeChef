@@ -28,7 +28,7 @@ Hello Jojo, you are 7 years old
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T09:43:02.786Z  
+**Submitted:** 2026-09-02T07:10:43.581Z  
 
 ```py
 name = input()
