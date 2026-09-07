@@ -2,24 +2,23 @@ import java.util.InputMismatchException;
 
 class Codechef {
     public static void main(String[] args) {
+        double celsius = -300.0; // Pre-defined temperature
 
         try {
-            int numerator = 1;
-            int denominator = 0;
-
-            if (denominator == 0) {
-                throw new ArithmeticException("Division by zero");
+            if (celsius < -273.15) {
+                throw new IllegalArgumentException("Temperature below absolute zero is not valid.");
             }
-            System.out.println("Result: " + numerator/denominator);
 
-        } catch (ArithmeticException ae) {
-            System.out.println("Error: Division by zero is not allowed.");
-        } catch (InputMismatchException ime) {
-            System.out.println("Error: Please enter valid integer values.");
+            double fahrenheit = (celsius * 9 / 5) + 32;
+
+            System.out.println("Temperature in Celsius: " + celsius);
+            System.out.println("Temperature in Fahrenheit: " + fahrenheit);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Invalid Argument: " + e.getMessage());
+        } catch (InputMismatchException e) {
+            System.out.println("Out of Range: " + e.getMessage());
         } catch (Exception e) {
-            System.out.println("An unexpected error occurred: " + e.getMessage());
-        } finally {
-            // finally block
+            System.out.println("An unknown error occurred.");
         }
     }
 }
