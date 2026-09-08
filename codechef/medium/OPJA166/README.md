@@ -13,7 +13,7 @@ In a Java try-catch block with multiple catch clauses, how are the catch blocks 
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T10:27:38.855Z  
+**Submitted:** 2026-09-07T10:27:38.094Z  
 
 ```cpp
 import java.util.InputMismatchException;
