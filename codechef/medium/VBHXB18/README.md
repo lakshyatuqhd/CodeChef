@@ -17,35 +17,42 @@ You have to complete the code to print all the steps of making the coffee.
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T09:02:43.029Z  
+**Submitted:** 2026-09-09T07:13:07.022Z  
 
 ```cpp
-      // complete the code here:
-      const brewResult=await brewCoffee();
-  
-      return "☕ Your coffee is ready!";
-    } catch (error) {
-      return "Something went wrong while making your coffee.";
-    }
-  }
-  
-  placeOrder().then(result => console.log(result));
-  
-      console.log(grindResult);
-      const grindResult = await grindCoffeeBeans();
-    try {
-  async function placeOrder() {
-  
-  }
+function grindCoffeeBeans() {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve("Coffee beans ground!");
+      }, 1000); // Simulate grinding for 1 second
     });
-      }, 500); // Simulate pouring for 0.5 seconds
+  }
+  
+  function brewCoffee() {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve("Coffee brewed!");
+      }, 2000); // Simulate brewing for 2 seconds
+    });
+  }
+  
+  function pourCoffee() {
     return new Promise(resolve => {
       setTimeout(() => {
         resolve("Coffee poured!");
+      }, 500); // Simulate pouring for 0.5 seconds
+    });
+  }
+  
+  async function placeOrder() {
+    try {
+      const grindResult = await grindCoffeeBeans();
+      console.log(grindResult);
+  
+      // complete the code here:
+      const brewResult=await brewCoffee();
       console.log(brewResult);
       const pourResult=await pourCoffee();
-      console.log(pourResult);
-  
 ```
 
 ---
