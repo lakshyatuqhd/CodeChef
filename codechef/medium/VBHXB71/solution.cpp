@@ -1,5 +1,7 @@
 // Import the important liberaries and declare the variables used.
 const express = require('express');
+const fs = require('fs');
+const path = require('path');
 const app = express();
 const PORT = 3000;
 
@@ -21,5 +23,3 @@ app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
 });
 
-const fs = require('fs');
-const path = require('path');
