@@ -20,11 +20,13 @@ Complete the code by filling in these parts!
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T06:23:57.228Z  
+**Submitted:** 2026-09-13T12:19:29.135Z  
 
 ```cpp
 // Import the important liberaries and declare the variables used.
 const express = require('express');
+const fs = require('fs');
+const path = require('path');
 const app = express();
 const PORT = 3000;
 
@@ -46,8 +48,6 @@ app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
 });
 
-const fs = require('fs');
-const path = require('path');
 
 ```
 
