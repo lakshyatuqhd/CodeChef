@@ -1,0 +1,25 @@
+                                                                                                                          <p style={baseParagraphStyle}>I am {age} years old.</p>
+                                                                                                                                <p style={baseParagraphStyle}>
+                                                                                                                                        My favorite color is <strong style={{ color: favoriteColor }}>{favoriteColor}</strong>.
+                                                                                                                                              </p>
+                                                                                                                                                    <p style={{ ...baseParagraphStyle, color: "#888", fontSize: "13px" }}>Year: 2026</p>
+                                                                                                                                                          <p style={{ ...baseParagraphStyle, color: "#888", fontSize: "13px" }}>Have a great day! 🎉</p>
+                                                                                                                                                              </div>
+                                                                                                                                                                );
+                                                                                                                                                                }
+
+                                                                                                                                                                export default function App() {
+                                                                                                                                                                  return (
+                                                                                                                                                                      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
+                                                                                                                                                                            {people.map((person, index) => (
+                                                                                                                                                                                    <GreetingCard
+                                                                                                                                                                                              key={index}
+                                                                                                                                                                                                        name={person.name}
+                                                                                                                                                                                                                  age={person.age}
+                                                                                                                                                                                                                            greeting={person.greeting}
+                                                                                                                                                                                                                                      favoriteColor={person.favoriteColor}
+                                                                                                                                                                                                                                              />
+                                                                                                                                                                                                                                                    ))}
+                                                                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                                                                          );
+                                                                                                                                                                                                                                                          }
