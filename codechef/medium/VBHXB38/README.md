@@ -36,7 +36,7 @@ Some tasks are immediate (like placing an order), some are scheduled (like prepa
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T06:34:54.706Z  
+**Submitted:** 2026-09-16T06:36:53.673Z  
 
 ```cpp
 function coffeeShopQueue() {
