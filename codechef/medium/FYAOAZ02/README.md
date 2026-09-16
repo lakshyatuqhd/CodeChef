@@ -54,7 +54,7 @@ Install the ejs dependency using the terminal.(Shortcut for terminal is  **crtl+
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T06:36:50.203Z  
+**Submitted:** 2026-09-16T05:44:38.293Z  
 
 ```cpp
 <!DOCTYPE html>
