@@ -16,37 +16,39 @@ Once done, submit your solution to verify correctness.
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T06:57:22.715Z  
+**Submitted:** 2026-09-17T15:57:27.570Z  
 
 ```cpp
+                                                                                                            <input
+                                                                                                                    type="email"
+                                                                                                      <label htmlFor={`${uniqueId}-email`}>Email:</label>
+                                                                                          />
+                                                                                                
+                                                                                    onChange={(e) => setName(e.target.value)}
+                                                                            value={name}
+                                                                    className="input-field"
+                                                            id={`${uniqueId}-name`}
+                                                    type="text"
+                                            <input
+                                      <label htmlFor={`${uniqueId}-name`}>Name:</label>
                           }
 
                             return (
                                 <form className="simple-form" onSubmit={handleSubmit}>
-                                      <label htmlFor={`${uniqueId}-name`}>Name:</label>
-                                            <input
-                                                    type="text"
-                                                            id={`${uniqueId}-name`}
-                                                                    className="input-field"
-                                                                            value={name}
-                                                                                    onChange={(e) => setName(e.target.value)}
-                                                                                          />
-                                                                                                
-                                                                                                      <label htmlFor={`${uniqueId}-email`}>Email:</label>
-                                                                                                            <input
-                                                                                                                    type="email"
-                                                                                                                            id={`${uniqueId}-email`}
-                                                                                                                                    className="input-field"
-                                                                                                                                            value={email}
-                                                                                                                                                    onChange={(e) => setEmail(e.target.value)}
-                                                                                                                                                          />
-                                                                                                                                                                
-                                                                                                                                                                      <button type="submit">Submit</button>
-                                                                                                                                                                          </form>
-                                                                                                                                                                            );
-                                                                                                                                                                            }
+                        setEmail("");
+                    setName(""); // Clear the input fields
+            event.preventDefault();
+                console.log("Submitted:", { name, email });
+import "./App.css";
 
-                                                                                                                                                                            export default SimpleForm;
+// eslint-disable-next-line react/prop-types
+function SimpleForm({ name: initialName = "", email: initialEmail = "" }) {
+  const [name, setName] = useState(initialName);
+    const [email, setEmail] = useState(initialEmail);
+      const uniqueId = useId(); // Hooks must be called at the top level
+
+        function handleSubmit(event) {
+import { useState, useId } from "react";
 ```
 
 ---
