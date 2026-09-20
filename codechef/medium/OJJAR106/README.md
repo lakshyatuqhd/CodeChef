@@ -91,32 +91,9 @@ Now, go ahead and update the code to add a cleanup function as given in the abov
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T07:07:57.849Z  
+**Submitted:** 2026-09-20T06:03:18.870Z  
 
 ```cpp
-  const [count, setCount] = useState(0);
-
-    useEffect(() => {
-        const timerID = setInterval(() => {
-              setCount(c => c + 1);
-                  }, 1000);
-
-                      // Cleanup function: stops timer when component unmounts
-                          return () => {
-                                clearInterval(timerID);
-                                    };
-                                      }, []);
-
-                                        return <h2>Count: {count}</h2>;
-                                        }
-
-                                        export default function App() {
-                                          const [showTimer, setShowTimer] = useState(true);
-
-                                            return (
-                                                <div>
-                                                      <button onClick={() => setShowTimer(!showTimer)}>
-                                                              Toggle Timer
                                                                     </button>
                                                                           {showTimer && <Timer />}
                                                                               </div>
