@@ -100,19 +100,9 @@ When multiple components need to reflect the same changing data, move that data'
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-17T15:51:52.953Z  
+**Submitted:** 2026-09-20T05:39:58.990Z  
 
 ```cpp
-                  value={value} 
-                        onChange={onChange} 
-                            />
-                              );
-                              }
-
-                              // Parent Component serving as the single source of truth
-                              function App() {
-                                const [sharedText, setSharedText] = useState('');
-
                                   const handleTextChange = (e) => {
                                       setSharedText(e.target.value);
                                         };
@@ -126,8 +116,23 @@ When multiple components need to reflect the same changing data, move that data'
                                                                           </div>
                                                                             );
                                                                             }
+                              );
+                              }
 
-                                                                            export default App;
+                              // Parent Component serving as the single source of truth
+                              function App() {
+                                const [sharedText, setSharedText] = useState('');
+
+                        onChange={onChange} 
+                            />
+            type="text" 
+                  value={value} 
+  return (
+      <input 
+function TextInput({ value, onChange }) {
+
+// Child Component receiving shared state and handler via props
+import { useState } from 'react';
 ```
 
 ---
