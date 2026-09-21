@@ -24,7 +24,7 @@ To begin, open your `Tabs.jsx` file and locate the `tab-content` section. Inside
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T09:50:08.418Z  
+**Submitted:** 2026-09-21T09:50:24.190Z  
 
 ```cpp
     <div className="App">
