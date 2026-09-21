@@ -23,34 +23,34 @@ Allow users to directly jump to a specific tab ("Personal Info", "Experience", "
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T09:45:23.928Z  
+**Submitted:** 2026-09-21T09:47:34.644Z  
 
 ```cpp
-                                                                                                                                                                                                                                                                                                                <p>Content for the experience tab goes here.</p>
-                                                                                                                                                                                                                                                                                                                          </div>
-                                                                                                                                                                                                                                                                                                                                  )}
-                                                                                                                                                                                                                                                                                                                                          {activeTabIndex === 2 && (
-                                                                                                                                                                                                                                                                                                                                                    <div>
-                                                                                                                                                                                                                                                                                                                                                                <h2>Review & Submit</h2>
-                                                                                                                                                                                                                                                                                                                                                                            <p>Content for the review tab goes here.</p>
-                                                                                                                                                                                                                                                                                                                                                                                      </div>
-                                                                                                                                                                                                                                                                                                                                                                                              )}
-                                                                                                                                                                                                                                                                                                                                                                                                    </div>
+              };
 
-                                                                                                                                                                                                                                                                                                                                                                                                          {/* Navigation Buttons */}
-                                                                                                                                                                                                                                                                                                                                                                                                                <div className="tab-navigation">
-                                                                                                                                                                                                                                                                                                                                                                                                                        <button onClick={onPrevious} disabled={isFirstTab}>
-                                                                                                                                                                                                                                                                                                                                                                                                                                  Previous
-                                                                                                                                                                                                                                                                                                                                                                                                                                          </button>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                  <button onClick={onNext} disabled={isLastTab}>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            Next
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </button>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                );
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
+                const handleNext = () => {
+                    setActiveTabIndex((prevIndex) => Math.min(prevIndex + 1, totalTabs - 1));
+                      };
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                export default Tabs;
+                        const handlePrevious = () => {
+                            setActiveTabIndex((prevIndex) => Math.max(prevIndex - 1, 0));
+                              };
+
+                                return (
+                                    <div className="App">
+                                          <h1>Job Application Form</h1>
+                                                {/* 2. Pass the Handler to Tabs */}
+                                                      <Tabs
+                                                              activeTabIndex={activeTabIndex}
+                                                                      onTabClick={handleTabClick}
+                                                                              onNext={handleNext}
+                                                                                      onPrevious={handlePrevious}
+                                                                                            />
+                                                                                                </div>
+                                                                                                  );
+                                                                                                  }
+
+                                                                                                  export default App;
 ```
 
 ---
