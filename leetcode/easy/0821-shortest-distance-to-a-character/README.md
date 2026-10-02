@@ -42,9 +42,9 @@ Output: [3,2,1,0]
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 99.86%)  
-**Memory:** 43.7 MB (beats 91.74%)  
-**Submitted:** 2026-10-02T13:18:38.120Z  
+**Runtime:** 0 ms  
+**Memory:** 42.6 MB  
+**Submitted:** 2026-10-02T13:18:48.574Z  
 
 ```java
 class Solution {
