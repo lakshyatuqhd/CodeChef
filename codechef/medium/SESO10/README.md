@@ -108,7 +108,7 @@ Product: 4 * 4 = 16 (not within range)
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-04T07:32:35.822Z  
+**Submitted:** 2026-10-04T07:32:40.364Z  
 
 ```java
 import java.util.Scanner;
