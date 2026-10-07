@@ -30,7 +30,7 @@ This exercise will help solidify your understanding of how to structure data def
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T06:43:26.198Z  
+**Submitted:** 2026-10-07T06:45:29.570Z  
 
 ```cpp
         console.log('Schema Fields:', Object.keys(productSchema.paths));
