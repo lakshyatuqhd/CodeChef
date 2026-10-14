@@ -23,7 +23,7 @@ Run the code to demonstrate how to handle the exceptions and display the error m
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T10:26:10.386Z  
+**Submitted:** 2026-10-14T06:57:20.672Z  
 
 ```java
 import java.util.InputMismatchException;
