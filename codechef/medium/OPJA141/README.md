@@ -13,7 +13,7 @@ What is the primary advantage of using static methods to create objects in Java?
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-12T06:41:08.727Z  
+**Submitted:** 2026-10-14T07:23:33.742Z  
 
 ```cpp
 class Name {
