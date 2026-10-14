@@ -4,59 +4,88 @@
 
 ## Problem
 
-_Description not available._
+### Coding Problem
+
+You are tasked with creating a simple calculator program in Java that can perform addition between two numbers. Create a class called Calculator with the following functionality:
+
+- Calculator Class: Implement a constructor to initialize data. add(Calculator other): Adds the values of the two Calculator objects and returns the result as a new Calculator object.
+- Main Function: Perform addition using the add method and display the result.
+### Task
+
+Write the methods of calculator class to display the addition.
+
+### Input Format
+
+First line contain two integers for addition using add method.
+
+### Output Format
+
+Print the result of addition on first line.
+
+### Sample 1:
+Input
+Output
+
+```
+1 2
+```
+
+```
+3
+```
 
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-12T06:41:26.415Z  
+**Submitted:** 2026-10-14T06:59:09.468Z  
 
 ```java
 import java.util.Scanner;
 
-class Student {
-    public class Course {
-        public String courseName;
+class Calculator {
+    private int result;
 
-        public void setData(String _courseName) {
-            courseName = _courseName;
-        }
-
-        public void display() {
-            System.out.println(courseName);
-        }
+    // Constructor to initialize the result to zero
+    public Calculator() {
+        result = 0;
     }
 
-    private String name;
-    private Course course;
-
-    public Student(String _name, String _courseName) {
-        name = _name;
-        course = new Course();
-        course.setData(_courseName);
+    // Constructor to initialize the result to zero
+    public void setResult(int value) {
+        result = value;
     }
 
-    public void display() {
-        System.out.println(name);
-        course.display();
+    // Method to get the current result
+    public int getResult() {
+        return result;
+    }
+
+    // Method to add two Calculator objects and return the result as a new Calculator object
+    public Calculator add(Calculator other) {
+        Calculator newCalc = new Calculator();
+        newCalc.setResult(result + other.getResult());
+        return newCalc;
     }
 }
+
 
 class Codechef {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        Calculator calcA = new Calculator();
+        Calculator calcB = new Calculator();
 
-        // Take inputs
-        String studentName = scanner.next();
-        String courseName = scanner.next();
+        int valueA = scanner.nextInt();
+        int valueB = scanner.nextInt();
 
-        // Create a student and a course
-        Student student = new Student(studentName, courseName);
+        calcA.setResult(valueA);
+        calcB.setResult(valueB);
 
-        // Display student's name and course name
-        student.display();
+        Calculator resultCalc = calcA.add(calcB);
+
+        System.out.println(resultCalc.getResult());
 
         scanner.close();
     }
