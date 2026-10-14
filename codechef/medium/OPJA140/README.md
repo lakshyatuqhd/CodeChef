@@ -13,7 +13,7 @@ Which keyword is used to define a nested class within an enclosing class in Java
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T07:23:22.301Z  
+**Submitted:** 2026-10-14T07:23:09.908Z  
 
 ```cpp
 class Name {
