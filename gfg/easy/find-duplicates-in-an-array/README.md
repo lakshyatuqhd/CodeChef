@@ -27,7 +27,7 @@ Explanation: There is no repeating element in the array, so the output is empty.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-29T09:40:24.402Z  
+**Submitted:** 2026-10-29T09:40:45.656Z  
 
 ```java
 import java.util.*;
