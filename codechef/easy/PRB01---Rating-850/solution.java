@@ -14,7 +14,6 @@ class Solution {
                 System.out.println("no");
             }
         }
-        scanner.close();
     }
     
     public static boolean isPrime(int n) {
