@@ -51,7 +51,7 @@ Now, $Y - X = -3$ and $Z - Y = -3$ which are equal, so this is an arithmetic pro
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-03T11:51:38.556Z  
+**Submitted:** 2026-11-03T11:51:46.618Z  
 
 ```java
 import java.util.Scanner;
