@@ -51,7 +51,7 @@ Now, $Y - X = -3$ and $Z - Y = -3$ which are equal, so this is an arithmetic pro
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-03T11:51:46.618Z  
+**Submitted:** 2026-11-03T11:53:56.764Z  
 
 ```java
 import java.util.Scanner;
@@ -67,7 +67,6 @@ class Solution {
             int Z = sc.nextInt();
             System.out.println(minOperations(X, Y, Z));
         }
-        sc.close();
     }
 
     public static int minOperations(int X, int Y, int Z) {
