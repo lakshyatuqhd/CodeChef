@@ -51,7 +51,7 @@ yes
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-03T10:32:53.223Z  
+**Submitted:** 2026-11-03T10:33:26.152Z  
 
 ```java
 import java.util.Scanner;
@@ -70,7 +70,6 @@ class Solution {
                 System.out.println("no");
             }
         }
-        scanner.close();
     }
     
     public static boolean isPrime(int n) {
