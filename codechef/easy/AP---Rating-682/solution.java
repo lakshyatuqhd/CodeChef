@@ -11,7 +11,6 @@ class Solution {
             int Z = sc.nextInt();
             System.out.println(minOperations(X, Y, Z));
         }
-        sc.close();
     }
 
     public static int minOperations(int X, int Y, int Z) {
