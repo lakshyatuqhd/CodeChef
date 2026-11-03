@@ -37,7 +37,7 @@ Explanation: The 1st Fibonacci number is 1.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-29T10:17:59.916Z  
+**Submitted:** 2026-11-03T11:28:46.648Z  
 
 ```java
 class Solution {
